@@ -1,0 +1,6 @@
+default: &DEFAULT
+  train_data_path: data/atec_nlp_sim/atec_nlp_sim_train.csv
+  valid_data_path: data/atec_nlp_sim/atec_nlp_sim_valid.csv
+  word_emb_raw_path: data/vocab/sgns.baidubaike.bigram-char
+  word_emb_path: data/vocab/word_embed.pickle
+  vocab_path: data/vocab/vocab.pickle

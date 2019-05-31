@@ -1,0 +1,16 @@
+default: &DEFAULT
+  batch_size: 64
+  hidden_size: 200
+  num_epoch: 20
+  learning_rate: 0.001
+  keep_prop: 1.0
+  num_classes: 2
+  grad_max: 6
+  max_len: 50
+  embed_size: 300
+  scale_l2: 0
+  label_smoothing: 0
+
+#large_hidden:
+#  <<: *DEFAULT
+#  num_hidden: 300
