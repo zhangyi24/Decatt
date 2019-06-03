@@ -1,6 +1,18 @@
-default: &DEFAULT
-  train_data_path: data/atec_nlp_sim/atec_nlp_sim_train.csv
-  valid_data_path: data/atec_nlp_sim/atec_nlp_sim_valid.csv
+default:
+  dataset: quora
+
+atec:
+  train_data_path: data/atec/atec_nlp_sim_train.csv
+  valid_data_path: data/atec/atec_nlp_sim_valid.csv
   word_emb_raw_path: data/vocab/sgns.baidubaike.bigram-char
-  word_emb_path: data/vocab/word_embed.pickle
-  vocab_path: data/vocab/vocab.pickle
+  word_emb_path: data/vocab/word_embed_zh.pickle
+  vocab_path: data/vocab/vocab_zh.pickle
+  save_model_path: checkpoints/atec/model.ckpt
+
+quora:
+  train_data_path: data/quora/train.csv
+  valid_data_path: data/quora/valid.csv
+  word_emb_raw_path: data/vocab/glove.6B.300d.txt
+  word_emb_path: data/vocab/word_embed_en.pickle
+  vocab_path: data/vocab/vocab_en.pickle
+  save_model_path: checkpoints/quora/model.ckpt
